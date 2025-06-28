@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Symbiosis</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">My Symbiosis</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="menu" id="menu">
+      <li><a href="#home">Home</a></li>
+      <li class="dropdown">
+        <a href="#books">Books</a>
+        <ul class="dropdown-content">
+          <li><a href="book1.html">Book 1</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li>
+        <select id="languageSwitcher" onchange="switchLanguage(this.value)">
+          <option value="en" selected>EN</option>
+          <option value="de">DE</option>
+        </select>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="overlay">
+    <header id="home">
+      <h1>Welcome to my Homepage</h1>
+      <p>Discover inspiring leadership books for modern visionaries.</p>
+    </header>
+
+    <main class="content" id="books">
+      <h2></h2>
+      <section class="book-subsection" id="book1" style="text-align: center;">
+        <h3 style="margin-bottom: 1rem;">SYMBIOSIS</h3>
+        <a href="book1.html">
+          <video autoplay muted loop playsinline
+                 style="width: 400px; border-radius: 12px; margin: 2rem auto; display: block;">
+            <source src="videos/video-of-a-hardcover-book-lying-in-a-dark-room-a16105b.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <p style="font-size: 1.1rem; line-height: 1.6; max-width: 700px; margin: 1.5rem auto;">
+          Utilizing Symbiotic Leadership to guide and improve Relationships
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Contact us at: <a href="mailto:contact@books.com" style="color: #b99624;">contact@books.com</a></p>
+      <p>&copy; 2025 LeadershipBooks</p>
+    </footer>
+  </div>
+</body>
+</html>
